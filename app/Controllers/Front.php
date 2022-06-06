@@ -6,6 +6,14 @@ class Front extends BaseController
 {
     public function index()
     {
-        return view('front/index');
+        $data = [
+            'title' => 'Data Keuangan'
+        ];
+        return view('front/index', $data);
+    }
+
+    public function blog()
+    {
+        return view('front/blog');
     }
 }
