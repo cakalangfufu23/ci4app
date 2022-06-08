@@ -6,6 +6,19 @@ class Back extends BaseController
 {
     public function index()
     {
-        return view('back/index');
+        $data = [
+            'title' => 'Admin GMIM KAIMA'
+        ];
+
+        return view('back/index', $data);
+    }
+
+    public function keuangan()
+    {
+        $data = [
+            'title' => 'Data Kuangan'
+        ];
+
+        return view('back/keuangan', $data);
     }
 }

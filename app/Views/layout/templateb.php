@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elegant Dashboard | Dashboard</title>
+  <title><?= $title; ?></title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="<?= base_url('b') ?>/img/svg/logo.svg" type="image/x-icon">
   <!-- Custom styles -->
@@ -21,11 +21,11 @@
   <aside class="sidebar">
     <div class="sidebar-start">
         <div class="sidebar-head">
-            <a href="/" class="logo-wrapper" title="Home">
+            <a href="back" class="logo-wrapper" title="Home">
                 <span class="sr-only">Home</span>
-                <span class="icon logo" aria-hidden="true"></span>
+                <!-- <span class="icon logo" aria-hidden="true"></span> -->
                 <div class="logo-text">
-                    <span class="logo-title">Elegant</span>
+                    <span class="logo-title">GMIM KAIMA</span>
                     <span class="logo-subtitle">Dashboard</span>
                 </div>
 
@@ -38,7 +38,14 @@
         <div class="sidebar-body">
             <ul class="sidebar-body-menu">
                 <li>
-                    <a class="active" href="/"><span class="icon home" aria-hidden="true"></span>Dashboard</a>
+                    <a href="keuangan">
+                        <span class="icon message" aria-hidden="true"></span>
+                        Keuangan
+                    </a>
+                    <span class="msg-counter">7</span>
+                </li>
+                <li>
+                    <a class="active" href="back"><span class="icon home" aria-hidden="true"></span>Dashboard</a>
                 </li>
                 <li>
                     <a class="show-cat-btn" href="##">
