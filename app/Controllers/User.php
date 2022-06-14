@@ -2,22 +2,22 @@
 
 namespace App\Controllers;
 
-class Back extends BaseController
+class User extends BaseController
 {
     public function index()
     {
         $data = [
-            'title' => 'Admin GMIM KAIMA'
+            'title' => 'BackEnd'
         ];
-
         return view('back/index', $data);
     }
 
     public function keuangan()
     {
         $data = [
-            'title' => 'Admin | Data Keuangan'
+            'title' => 'GMIM | Data Keuangan'
         ];
+        return view('back/keuangan', $data);
     }
 
 }

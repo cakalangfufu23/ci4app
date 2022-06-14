@@ -38,63 +38,15 @@
         <div class="sidebar-body">
             <ul class="sidebar-body-menu">
                 <li>
-                    <a href="keuangan">
+                    <a class="active" href="back"><span class="icon home" aria-hidden="true"></span>Dashboard</a>
+                </li>
+                <li>
+                    <a href="/user/keuangan">
                         <span class="icon message" aria-hidden="true"></span>
                         Keuangan
                     </a>
                     <span class="msg-counter">7</span>
-                </li>
-                <li>
-                    <a class="active" href="back"><span class="icon home" aria-hidden="true"></span>Dashboard</a>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon document" aria-hidden="true"></span>Posts
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <li>
-                            <a href="posts.html">All Posts</a>
-                        </li>
-                        <li>
-                            <a href="new-post.html">Add new post</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon folder" aria-hidden="true"></span>Categories
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <li>
-                            <a href="categories.html">All categories</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon image" aria-hidden="true"></span>Media
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <li>
-                            <a href="media-01.html">Media-01</a>
-                        </li>
-                        <li>
-                            <a href="media-02.html">Media-02</a>
-                        </li>
-                    </ul>
-                </li>
+                </li>      
                 <li>
                     <a class="show-cat-btn" href="##">
                         <span class="icon paper" aria-hidden="true"></span>Pages
@@ -112,13 +64,6 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="comments.html">
-                        <span class="icon message" aria-hidden="true"></span>
-                        Comments
-                    </a>
-                    <span class="msg-counter">7</span>
-                </li>
             </ul>
             <span class="system-menu__title">system</span>
             <ul class="sidebar-body-menu">
@@ -126,56 +71,19 @@
                     <a href="appearance.html"><span class="icon edit" aria-hidden="true"></span>Appearance</a>
                 </li>
                 <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon category" aria-hidden="true"></span>Extentions
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <li>
-                            <a href="extention-01.html">Extentions-01</a>
-                        </li>
-                        <li>
-                            <a href="extention-02.html">Extentions-02</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon user-3" aria-hidden="true"></span>Users
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <li>
-                            <a href="users-01.html">Users-01</a>
-                        </li>
-                        <li>
-                            <a href="users-02.html">Users-02</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
                     <a href="##"><span class="icon setting" aria-hidden="true"></span>Settings</a>
+                </li>
+                <li>
+                    <a href="<?= base_url('logout'); ?>">
+                        <span class="icon message" aria-hidden="true"></span>
+                        Logout
+                    </a>
+                    <span class="msg-counter">7</span>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="sidebar-footer">
-        <a href="##" class="sidebar-user">
-            <span class="sidebar-user-img">
-                <picture><source srcset="<?= base_url('b') ?>/?= base_url('b')?>/img/avatar/avatar-illustrated-01.webp" type="image/webp"><img src="<?= base_url('b') ?>/img/avatar/avatar-illustrated-01.png" alt="User name"></picture>
-            </span>
-            <div class="sidebar-user-info">
-                <span class="sidebar-user__title">Nafisa Sh.</span>
-                <span class="sidebar-user__subtitle">Support manager</span>
-            </div>
-        </a>
-    </div>
+  
 </aside>
   <div class="main-wrapper">
     <!-- ! Main nav -->
@@ -192,17 +100,6 @@
         <span class="sr-only">Toggle menu</span>
         <span class="icon menu-toggle--gray" aria-hidden="true"></span>
       </button>
-      <div class="lang-switcher-wrapper">
-        <button class="lang-switcher transparent-btn" type="button">
-          EN
-          <i data-feather="chevron-down" aria-hidden="true"></i>
-        </button>
-        <ul class="lang-menu dropdown">
-          <li><a href="##">English</a></li>
-          <li><a href="##">French</a></li>
-          <li><a href="##">Uzbek</a></li>
-        </ul>
-      </div>
       <button class="theme-switcher gray-circle-btn" type="button" title="Switch theme">
         <span class="sr-only">Switch theme</span>
         <i class="sun-icon" data-feather="sun" aria-hidden="true"></i>
@@ -258,7 +155,7 @@
         <button href="##" class="nav-user-btn dropdown-btn" title="My profile" type="button">
           <span class="sr-only">My profile</span>
           <span class="nav-user-img">
-            <picture><source srcset="<?= base_url('b') ?>//img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="<?= base_url('b') ?>/img/avatar/avatar-illustrated-02.png" alt="User name"></picture>
+            <picture><source srcset="<?= base_url('b') ?>/img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="<?= base_url('b') ?>/img/avatar/avatar-illustrated-02.png" alt="User name"></picture>
           </span>
         </button>
         <ul class="users-item-dropdown nav-user-dropdown dropdown">
@@ -270,7 +167,7 @@
               <i data-feather="settings" aria-hidden="true"></i>
               <span>Account settings</span>
             </a></li>
-          <li><a class="danger" href="##">
+          <li><a class="danger" href="/logout">
               <i data-feather="log-out" aria-hidden="true"></i>
               <span>Log out</span>
             </a></li>
