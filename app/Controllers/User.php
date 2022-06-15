@@ -9,7 +9,7 @@ class User extends BaseController
         $data = [
             'title' => 'BackEnd'
         ];
-        return view('back/index', $data);
+        return view('user/index', $data);
     }
 
     public function keuangan()
@@ -17,7 +17,7 @@ class User extends BaseController
         $data = [
             'title' => 'GMIM | Data Keuangan'
         ];
-        return view('back/keuangan', $data);
+        return view('user/keuangan', $data);
     }
 
 }

@@ -26,7 +26,8 @@
                 <!-- <span class="icon logo" aria-hidden="true"></span> -->
                 <div class="logo-text">
                     <span class="logo-title">GMIM KAIMA</span>
-                    <span class="logo-subtitle">Dashboard</span>
+                    
+                    <span class="logo-subtitle"><?= user()->fullname; ?><span class="logo-title">(<?= user()->username; ?>)</span></span>
                 </div>
 
             </a>
@@ -46,7 +47,16 @@
                         Keuangan
                     </a>
                     <span class="msg-counter">7</span>
-                </li>      
+                </li> 
+                <?php if( in_groups('admin')) : ?>
+                <li>
+                    <a href="<?= base_url('admin'); ?>">
+                        <span class="icon message" aria-hidden="true"></span>
+                        User List
+                    </a>
+                    <span class="msg-counter">7</span>
+                </li> 
+                <?php endif; ?>
                 <li>
                     <a class="show-cat-btn" href="##">
                         <span class="icon paper" aria-hidden="true"></span>Pages
@@ -68,7 +78,7 @@
             <span class="system-menu__title">system</span>
             <ul class="sidebar-body-menu">
                 <li>
-                    <a href="appearance.html"><span class="icon edit" aria-hidden="true"></span>Appearance</a>
+                    <a href="<?= base_url('user'); ?>"><span class="icon edit" aria-hidden="true"></span>My Profile</a>
                 </li>
                 <li>
                     <a href="##"><span class="icon setting" aria-hidden="true"></span>Settings</a>
@@ -155,7 +165,7 @@
         <button href="##" class="nav-user-btn dropdown-btn" title="My profile" type="button">
           <span class="sr-only">My profile</span>
           <span class="nav-user-img">
-            <picture><source srcset="<?= base_url('b') ?>/img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="<?= base_url('b') ?>/img/avatar/avatar-illustrated-02.png" alt="User name"></picture>
+            <picture><source srcset="<?= base_url('userfoto') ?>/<?= user()->user_image; ?>" type="image/webp"><img src="<?= base_url('userfoto') ?>/<?= user()->user_image; ?>" alt="User name"></picture>
           </span>
         </button>
         <ul class="users-item-dropdown nav-user-dropdown dropdown">
