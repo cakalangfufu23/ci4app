@@ -7,17 +7,10 @@ class User extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'BackEnd'
+            'title' => 'myProfile'
         ];
         return view('user/index', $data);
     }
 
-    public function keuangan()
-    {
-        $data = [
-            'title' => 'GMIM | Data Keuangan'
-        ];
-        return view('user/keuangan', $data);
-    }
 
 }
